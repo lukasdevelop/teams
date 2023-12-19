@@ -4,7 +4,7 @@ import { NewGroup } from '@screens/NewGroup';
 import { Loading } from '@components/Loading'
 import theme from './src/theme';
 import { StatusBar } from 'react-native';
-import { Players } from '@screens/Players';
+import { Routes } from './src/routes';
 
 export default function App() {
 
@@ -15,7 +15,7 @@ export default function App() {
       <StatusBar
         barStyle='light-content'
       />
-      {fontsLoader ? <Players /> : <Loading />}
+      {fontsLoader ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
